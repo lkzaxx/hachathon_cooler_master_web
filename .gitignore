@@ -1,0 +1,28 @@
+backend/.env
+
+# Node specific
+node_modules/
+
+# Python specific
+__pycache__/
+*.pyc
+
+# Generated media
+backend/media/generated/
+
+# Ignore node cache
+frontend/node_modules/.cache/
+node_modules/
+.npm
+npm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django
+*.log
+*.log.*
+*.log.*.*
+*.log.*.*.*

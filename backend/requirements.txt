@@ -1,0 +1,9 @@
+Django==4.2
+django-cors-headers==4.0.0
+django-storages==1.14.6
+djangorestframework==3.14.0
+boto3==1.38.3
+gunicorn==21.2.0
+python-dotenv==1.0.0
+Pillow==9.5.0
+requests==2.31.0

@@ -1,0 +1,38 @@
+# 專案啟動指令說明
+
+## 1. 啟動後端（Django, Elastic Beanstalk 本地開發）
+
+```bash
+cd backend
+# 建議啟動虛擬環境
+# Windows:
+venv\Scripts\activate
+# Mac/Linux:
+source venv/bin/activate
+
+# 安裝依賴
+pip install -r requirements.txt
+
+# 啟動本地伺服器
+python manage.py runserver 8080
+```
+
+---
+
+## 2. 啟動前端（Vue）
+
+```bash
+cd frontend
+# 安裝依賴
+npm install
+
+# 啟動本地開發伺服器
+npm run serve
+```
+
+---
+
+## 3. 注意事項
+- 請確認 backend 的 .env 或設定檔已設好資料庫、S3、CORS 等資訊。
+- 前端如需串接本地後端，請將 frontend/.env 設定 API base URL 為 http://localhost:8000。
+- 若需部署，請依各自平台（如 EB、Amplify）操作。 
